@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ArtistsActivity">
+
+    <include layout="@layout/include_toolbar"></include>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/my_scrollbar_style"
+                android:scrollbars="vertical"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

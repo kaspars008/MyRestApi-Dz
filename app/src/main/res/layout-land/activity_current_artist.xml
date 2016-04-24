@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#122940"
+    >
+
+    <include layout="@layout/include_toolbar"></include>
+
+    <ScrollView android:id="@+id/textAreaScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/activity_current_artist_relativelayout"
+            >
+
+            <ImageView
+                android:id="@+id/activity_current_artist_image"
+                android:layout_width="@dimen/image_width_medium"
+                android:layout_height="@dimen/image_height_medium"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom ="20dp"
+                android:clickable="true"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/activity_current_artist_image"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/layout_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_current_artist_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:text="genre"
+                    android:padding="5dp"
+                    android:textColor="#8fa0ae"
+                    android:layout_marginBottom="5dp"
+                    />
+                <TextView
+                    android:id="@+id/activity_current_artist_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textColor="#8fa0ae"
+                    android:layout_marginBottom="15dp"
+                    android:padding="5dp"
+                    android:text="number"
+                    />
+                <View
+                    android:id="@+id/border"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#618989"
+                    android:layout_height="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/activity_current_artist_biographie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Биография"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="@dimen/font_size_large"
+                    android:textColor="#889baa"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/activity_current_artist_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="description"
+                    android:textColor="#a1abb5"
+                    android:textSize="@dimen/font_size_medium"
+                    android:padding="5dp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
